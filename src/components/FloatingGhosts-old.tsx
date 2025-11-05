@@ -17,7 +17,7 @@ export const FloatingGhosts = () => {
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: Math.random() * 60 + 40,
+      size: Math.random() * 100 + 100,
       duration: Math.random() * 10 + 15,
       delay: Math.random() * 5,
     }));
@@ -25,7 +25,8 @@ export const FloatingGhosts = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-30 overflow-hidden">
+    // ✅ Put your patch here inside the component, not on top of the file
+    <div className="fixed inset-0 pointer-events-none z-[9999] overflow-visible">
       {ghosts.map((ghost) => (
         <div
           key={ghost.id}
@@ -39,15 +40,15 @@ export const FloatingGhosts = () => {
             animationDelay: `${ghost.delay}s`,
           }}
         >
-          {/* Ghost body */}
           <div className="relative w-full h-full">
-            {/* Head */}
+            {/* Ghost head */}
             <div
               className="absolute top-0 left-1/2 -translate-x-1/2 rounded-full blur-sm"
               style={{
                 width: "60%",
                 height: "45%",
-                background: "radial-gradient(circle, hsl(0 0% 100% / 0.8), hsl(0 0% 100% / 0.3))",
+                background:
+                  "radial-gradient(circle, hsl(0 0% 100% / 0.8), hsl(0 0% 100% / 0.3))",
                 boxShadow: "0 0 30px hsl(280 70% 45% / 0.6)",
               }}
             />
@@ -63,17 +64,17 @@ export const FloatingGhosts = () => {
               />
             </div>
             {/* Mouth */}
-            <div
-              className="absolute top-[35%] left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-background/80"
-            />
+            <div className="absolute top-[35%] left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-background/80" />
             {/* Wavy bottom */}
             <div
               className="absolute bottom-0 left-1/2 -translate-x-1/2 blur-sm"
               style={{
                 width: "70%",
                 height: "60%",
-                background: "radial-gradient(ellipse at top, hsl(0 0% 100% / 0.7), hsl(0 0% 100% / 0.2))",
-                clipPath: "polygon(0 0, 20% 30%, 40% 0, 60% 30%, 80% 0, 100% 30%, 100% 100%, 0 100%)",
+                background:
+                  "radial-gradient(ellipse at top, hsl(0 0% 100% / 0.7), hsl(0 0% 100% / 0.2))",
+                clipPath:
+                  "polygon(0 0, 20% 30%, 40% 0, 60% 30%, 80% 0, 100% 30%, 100% 100%, 0 100%)",
                 boxShadow: "0 10px 40px hsl(280 70% 45% / 0.5)",
               }}
             />

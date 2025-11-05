@@ -130,7 +130,7 @@ export const Hero = () => {
         <div className="mt-12 flex flex-wrap gap-6 justify-center text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
             <span className="text-primary">📅</span>
-            <span>October 20-31, 2024</span>
+            <span>October 20-31, 2025</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="text-primary">⏰</span>

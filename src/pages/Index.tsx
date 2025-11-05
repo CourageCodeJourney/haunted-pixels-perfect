@@ -4,7 +4,7 @@ import { Attractions } from "@/components/Attractions";
 import { Tickets } from "@/components/Tickets";
 import { Footer } from "@/components/Footer";
 import { ParallaxBackground } from "@/components/ParallaxBackground";
-import { FloatingGhosts } from "@/components/FloatingGhosts";
+import FloatingEntities from "@/components/FloatingEntities"; // ✅ replaced FloatingGhosts
 import { SpookyEyes } from "@/components/SpookyEyes";
 import { CrawlingSpiders } from "@/components/CrawlingSpiders";
 import { BloodDrips } from "@/components/BloodDrips";
@@ -17,11 +17,12 @@ import { Cobwebs } from "@/components/Cobwebs";
 
 const Index = () => {
   return (
-    <main className="relative min-h-screen bg-background">
+    <main className="relative min-h-screen bg-background overflow-hidden">
+      {/* Background & Global FX */}
       <ParallaxBackground />
       <Cobwebs />
       <ShadowFigures />
-      <FloatingGhosts />
+      <FloatingEntities /> {/* 👻 Replaced FloatingGhosts */}
       <SpookyEyes />
       <CrawlingSpiders />
       <FlyingBats />
@@ -29,6 +30,8 @@ const Index = () => {
       <LightningFlashes />
       <ScreenGlitch />
       <CreepyAudio />
+
+      {/* Foreground Content */}
       <div className="relative z-10">
         <Hero />
         <About />
