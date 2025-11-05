@@ -9,16 +9,26 @@ import { SpookyEyes } from "@/components/SpookyEyes";
 import { CrawlingSpiders } from "@/components/CrawlingSpiders";
 import { BloodDrips } from "@/components/BloodDrips";
 import { LightningFlashes } from "@/components/LightningFlashes";
+import { FlyingBats } from "@/components/FlyingBats";
+import { ScreenGlitch } from "@/components/ScreenGlitch";
+import { ShadowFigures } from "@/components/ShadowFigures";
+import { CreepyAudio } from "@/components/CreepyAudio";
+import { Cobwebs } from "@/components/Cobwebs";
 
 const Index = () => {
   return (
     <main className="relative min-h-screen bg-background">
       <ParallaxBackground />
+      <Cobwebs />
+      <ShadowFigures />
       <FloatingGhosts />
       <SpookyEyes />
       <CrawlingSpiders />
+      <FlyingBats />
       <BloodDrips />
       <LightningFlashes />
+      <ScreenGlitch />
+      <CreepyAudio />
       <div className="relative z-10">
         <Hero />
         <About />

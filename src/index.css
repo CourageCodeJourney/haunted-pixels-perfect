@@ -192,6 +192,90 @@ All colors MUST be HSL.
       transform: translateX(-10px) rotate(-5deg);
     }
   }
+
+  @keyframes bat-fly {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      transform: translateX(calc(var(--direction, 1) * 120vw)) translateY(calc(sin(var(--angle, 1)) * 200px));
+    }
+  }
+
+  @keyframes wing-flap {
+    0%, 100% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(0.7);
+    }
+  }
+
+  @keyframes shadow-peek-left {
+    0%, 100% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+  }
+
+  @keyframes shadow-peek-right {
+    0%, 100% {
+      transform: translateX(100%);
+    }
+    50% {
+      transform: translateX(-50px);
+    }
+  }
+
+  @keyframes glitch-1 {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    75% {
+      transform: translateX(5px);
+    }
+  }
+
+  @keyframes glitch-2 {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    33% {
+      transform: translateX(3px);
+    }
+    66% {
+      transform: translateX(-3px);
+    }
+  }
+
+  @keyframes glitch-3 {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-2px);
+    }
+    80% {
+      transform: translateX(2px);
+    }
+  }
+
+  @keyframes screen-shake {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translate(-2px, 2px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translate(2px, -2px);
+    }
+  }
 }
 
 @layer base {

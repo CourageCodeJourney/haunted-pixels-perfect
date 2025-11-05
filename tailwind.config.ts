@@ -206,6 +206,82 @@ export default {
             transform: "translateX(-10px) rotate(-5deg)"
           }
         },
+        "bat-fly": {
+          "0%": {
+            transform: "translateX(0) translateY(0)"
+          },
+          "100%": {
+            transform: "translateX(120vw) translateY(50px)"
+          }
+        },
+        "wing-flap": {
+          "0%, 100%": {
+            transform: "scaleX(1)"
+          },
+          "50%": {
+            transform: "scaleX(0.7)"
+          }
+        },
+        "shadow-peek-left": {
+          "0%, 100%": {
+            transform: "translateX(-100%)"
+          },
+          "50%": {
+            transform: "translateX(50px)"
+          }
+        },
+        "shadow-peek-right": {
+          "0%, 100%": {
+            transform: "translateX(100%)"
+          },
+          "50%": {
+            transform: "translateX(-50px)"
+          }
+        },
+        "glitch-1": {
+          "0%, 100%": {
+            transform: "translateX(0)"
+          },
+          "25%": {
+            transform: "translateX(-5px)"
+          },
+          "75%": {
+            transform: "translateX(5px)"
+          }
+        },
+        "glitch-2": {
+          "0%, 100%": {
+            transform: "translateX(0)"
+          },
+          "33%": {
+            transform: "translateX(3px)"
+          },
+          "66%": {
+            transform: "translateX(-3px)"
+          }
+        },
+        "glitch-3": {
+          "0%, 100%": {
+            transform: "translateX(0)"
+          },
+          "20%": {
+            transform: "translateX(-2px)"
+          },
+          "80%": {
+            transform: "translateX(2px)"
+          }
+        },
+        "screen-shake": {
+          "0%, 100%": {
+            transform: "translate(0, 0)"
+          },
+          "10%, 30%, 50%, 70%, 90%": {
+            transform: "translate(-2px, 2px)"
+          },
+          "20%, 40%, 60%, 80%": {
+            transform: "translate(2px, -2px)"
+          }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -223,6 +299,14 @@ export default {
         "blood-drip": "blood-drip 5s ease-in infinite",
         "creep-in": "creep-in 15s linear infinite",
         "skitter": "skitter 2s ease-in-out infinite",
+        "bat-fly": "bat-fly 5s linear infinite",
+        "wing-flap": "wing-flap 0.3s ease-in-out infinite",
+        "shadow-peek-left": "shadow-peek-left 3s ease-in-out infinite",
+        "shadow-peek-right": "shadow-peek-right 3s ease-in-out infinite",
+        "glitch-1": "glitch-1 0.2s ease-in-out infinite",
+        "glitch-2": "glitch-2 0.3s ease-in-out infinite",
+        "glitch-3": "glitch-3 0.25s ease-in-out infinite",
+        "screen-shake": "screen-shake 0.5s ease-in-out",
       },
     },
   },
