@@ -1,3 +1,4 @@
+import FloatingEntities from "./components/FloatingEntities";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,6 +14,10 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+
+      {/* 👻 Floating Ghosts, Bats, and Spiders */}
+      <FloatingEntities />
+
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
