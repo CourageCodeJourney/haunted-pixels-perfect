@@ -172,6 +172,40 @@ export default {
             transform: "scaleY(0.1)"
           }
         },
+        "blood-drip": {
+          "0%": {
+            transform: "translateY(-100%) scaleY(0)",
+            opacity: "0"
+          },
+          "10%": {
+            opacity: "0.8"
+          },
+          "100%": {
+            transform: "translateY(100vh) scaleY(1)",
+            opacity: "0"
+          }
+        },
+        "creep-in": {
+          "0%": {
+            transform: "translateY(0)",
+            opacity: "0"
+          },
+          "100%": {
+            transform: "translateY(var(--final-y, 100vh))",
+            opacity: "1"
+          }
+        },
+        "skitter": {
+          "0%, 100%": {
+            transform: "translateX(0) rotate(0deg)"
+          },
+          "25%": {
+            transform: "translateX(10px) rotate(5deg)"
+          },
+          "75%": {
+            transform: "translateX(-10px) rotate(-5deg)"
+          }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -186,6 +220,9 @@ export default {
         "ghost-float": "ghost-float 20s ease-in-out infinite",
         "spooky-blink": "spooky-blink 4s ease-in-out infinite",
         "blink": "blink 3s ease-in-out infinite",
+        "blood-drip": "blood-drip 5s ease-in infinite",
+        "creep-in": "creep-in 15s linear infinite",
+        "skitter": "skitter 2s ease-in-out infinite",
       },
     },
   },

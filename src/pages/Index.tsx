@@ -6,6 +6,9 @@ import { Footer } from "@/components/Footer";
 import { ParallaxBackground } from "@/components/ParallaxBackground";
 import { FloatingGhosts } from "@/components/FloatingGhosts";
 import { SpookyEyes } from "@/components/SpookyEyes";
+import { CrawlingSpiders } from "@/components/CrawlingSpiders";
+import { BloodDrips } from "@/components/BloodDrips";
+import { LightningFlashes } from "@/components/LightningFlashes";
 
 const Index = () => {
   return (
@@ -13,6 +16,9 @@ const Index = () => {
       <ParallaxBackground />
       <FloatingGhosts />
       <SpookyEyes />
+      <CrawlingSpiders />
+      <BloodDrips />
+      <LightningFlashes />
       <div className="relative z-10">
         <Hero />
         <About />
