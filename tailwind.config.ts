@@ -136,6 +136,42 @@ export default {
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0.4" },
         },
+        "ghost-float": {
+          "0%, 100%": {
+            transform: "translateY(0) translateX(0) rotate(-5deg)",
+            opacity: "0.7"
+          },
+          "25%": {
+            transform: "translateY(-30px) translateX(20px) rotate(5deg)",
+            opacity: "0.9"
+          },
+          "50%": {
+            transform: "translateY(-50px) translateX(-10px) rotate(-3deg)",
+            opacity: "0.6"
+          },
+          "75%": {
+            transform: "translateY(-20px) translateX(15px) rotate(7deg)",
+            opacity: "0.8"
+          }
+        },
+        "spooky-blink": {
+          "0%, 90%, 100%": {
+            opacity: "1",
+            transform: "scaleY(1)"
+          },
+          "95%": {
+            opacity: "0",
+            transform: "scaleY(0.1)"
+          }
+        },
+        "blink": {
+          "0%, 95%, 100%": {
+            transform: "scaleY(1)"
+          },
+          "97.5%": {
+            transform: "scaleY(0.1)"
+          }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -147,6 +183,9 @@ export default {
         "slide-in-right": "slide-in-right 0.8s ease-out",
         "scale-up": "scale-up 0.8s ease-out",
         "flicker": "flicker 3s ease-in-out infinite",
+        "ghost-float": "ghost-float 20s ease-in-out infinite",
+        "spooky-blink": "spooky-blink 4s ease-in-out infinite",
+        "blink": "blink 3s ease-in-out infinite",
       },
     },
   },
