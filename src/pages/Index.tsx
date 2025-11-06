@@ -1,3 +1,4 @@
+import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Attractions } from "@/components/Attractions";
@@ -30,6 +31,9 @@ const Index = () => {
       <LightningFlashes />
       <ScreenGlitch />
       <CreepyAudio />
+
+      {/* Header */}
+      <Header />
 
       {/* Foreground Content */}
       <div className="relative z-10">
