@@ -15,6 +15,7 @@ import { ScreenGlitch } from "@/components/ScreenGlitch";
 import { ShadowFigures } from "@/components/ShadowFigures";
 import { CreepyAudio } from "@/components/CreepyAudio";
 import { Cobwebs } from "@/components/Cobwebs";
+import { BloodyCursor } from "@/components/BloodyCursor";
 
 const Index = () => {
   return (
@@ -31,6 +32,7 @@ const Index = () => {
       <LightningFlashes />
       <ScreenGlitch />
       <CreepyAudio />
+      <BloodyCursor />
 
       {/* Header */}
       <Header />

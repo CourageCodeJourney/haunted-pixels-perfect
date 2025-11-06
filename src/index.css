@@ -276,6 +276,32 @@ All colors MUST be HSL.
       transform: translate(2px, -2px);
     }
   }
+
+  @keyframes stretch-drip {
+    0% {
+      height: 0;
+      opacity: 0.8;
+    }
+    100% {
+      height: 40px;
+      opacity: 0;
+    }
+  }
+
+  @keyframes cursor-blood-drip {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    70% {
+      transform: translateY(100px) scale(0.8);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(150px) scale(0.5);
+      opacity: 0;
+    }
+  }
 }
 
 @layer base {
