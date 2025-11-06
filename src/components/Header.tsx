@@ -44,13 +44,20 @@ export const Header = () => {
             aria-label="Return to top"
           >
             <span 
-              className="text-2xl md:text-3xl font-bold animate-flicker text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary"
+              className="text-3xl md:text-4xl animate-pulse hover:animate-bounce transition-transform"
               style={{ 
-                fontFamily: "'Creepster', cursive",
-                textShadow: "0 0 20px hsl(var(--primary) / 0.5)",
+                filter: "drop-shadow(0 0 10px hsl(var(--primary) / 0.6))",
               }}
             >
-              🕷️ The Midnight Manor
+              🦇
+            </span>
+            <span 
+              className="text-lg md:text-xl font-bold text-foreground/90 group-hover:text-primary transition-colors hidden sm:inline"
+              style={{ 
+                fontFamily: "'Creepster', cursive",
+              }}
+            >
+              MM
             </span>
           </button>
 
